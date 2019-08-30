@@ -1,0 +1,7 @@
+<view class='navBottom'>
+  <view wx:for='{{navList}}' wx:key='{{index}}' bindtap='onItemClick' data-index='{{index}}' class='item {{currentIndex==item.id?"itemActive":""}}'>
+    <image class='icon' src='{{currentIndex==item.id?item.icon:item.icon}}'></image>
+    <view>关于我们</view>
+  </view>
+
+</view>

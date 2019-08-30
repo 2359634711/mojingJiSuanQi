@@ -1,0 +1,57 @@
+/* pages/detail/detail.wxss */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.backImg {
+  width: 100%;
+  height: 673rpx;
+  position: absolute;
+  top: 0;
+}
+
+.content {
+  position: absolute;
+  top: 592rpx;
+  z-index: 1;
+  width: 710rpx;
+  background: #fff;
+  border-radius: 12rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 42rpx;
+  margin-bottom: 130rpx;
+}
+
+.pickItem {
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+.pickView {
+  height: 300rpx;
+  text-align: center;
+}
+
+.title {
+  color: #33466d;
+  font-weight: 800;
+  font-size: 36rpx;
+  text-align: center;
+  padding: 44rpx 0;
+}
+
+.btn {
+  border-radius: 100px;
+  background: var(--themeCG);
+  line-height: 84rpx;
+  width: 591rpx;
+  color: #fff;
+  text-align: center;
+}
+

@@ -1,0 +1,17 @@
+.iconTitle {
+  width: 382rpx;
+  height: 100rpx;
+  background: #ccc;
+}
+
+.iconContent {
+  width: 727rpx;
+  margin-top: 10rpx;
+  /* height: 1294rpx; */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

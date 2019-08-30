@@ -1,0 +1,78 @@
+<theme-view style='width:100%;height:100%;'>
+  <view class='back'>
+    <image mode='aspectFill' src=''></image>
+  </view>
+
+
+  <view class='main'>
+    <view class='title'>
+      <image src='/res/icon/tip@2x.png' class='icon'></image>
+      <view class='titleTitle'>您选择的身份是：</view>
+      <view class='titleValue'>{{inputKeys[level].title}}</view>
+    </view>
+
+    <view class='content'>
+      <view class='contentBox'>
+        <view class='contentTtitle'>
+          <image class='icon' src='/res/icon/团队 (2)@2x.png'></image>
+          <view class='contentTitleTitle'>直接关系</view>
+        </view>
+        <view class='formBox'>
+          <view class='inputLine' wx:for='{{directInputs}}' wx:key='{{item.id}}'>
+            <view class='inputBox'>
+              <view class='inputTitle'>{{item.title}}</view> <!--relation关系 type数量还是单子 indexid num第几个 -->
+              <input bindinput='inputChange' data-relation='direct' data-type='num' data-num='{{index}}' data-index='{{item.id}}' placeholder='请输入'></input>
+              <view>人</view>
+            </view>
+            <view class='inputBox'>
+              <view class='inputTitle'>单量</view>
+              <input bindinput='inputChange' data-relation='direct' data-type='order' data-num='{{index}}' data-index='{{item.id}}' placeholder='请输入'></input>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='contentBox'>
+
+        <view class='contentTtitle'>
+          <image class='icon' src='/res/icon/加入家族@2x.png'></image>
+          <view class='contentTitleTitle'>层级关系</view>
+        </view>
+        <view class='formBox'>
+          <view class='inputLine' wx:for='{{levelInputs}}' wx:key='{{item.id}}'>
+            <view class='inputBox'>
+              <view class='inputTitle'>{{item.title}}</view>
+              <input bindinput='inputChange' data-relation='level' data-type='num' data-num='{{index}}' data-index='{{item.id}}' placeholder='请输入'></input>
+              <view>人</view>
+            </view>
+            <view class='inputBox'>
+              <view class='inputTitle'>单量</view>
+              <input bindinput='inputChange' data-relation='level' data-type='order' data-num='{{index}}' data-index='{{item.id}}' placeholder='请输入'></input>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='contentOther'>
+
+      <view class='otherInputBox'>
+        <view class='otherTitle'>每单金额/元</view>
+        <input data-key='money' bindinput='changeOther' class='otherInput' placeholder='请您输入每笔订单金额'></input>
+      </view>
+      <view class='otherInputBox'>
+        <view class='otherTitle'>计算时间/天</view>
+        <input data-key='time' bindinput='changeOther' class='otherInput' placeholder='请您输入每笔订单金额'></input>
+      </view>
+      <view class='otherInputBox' style='display:flex;flex-direction: row;align-item:center;justify-content: space-between;'>
+        <view class='otherTitle'>复购折扣率</view>
+        <switch data-key='fugou_open' bindchange='changeOther'></switch>
+      </view>
+      <view class='otherInputBox'>
+        <view class='otherTitle'>折扣率/折</view>
+        <input data-key='fugou_num' bindinput='changeOther' class='otherInput' placeholder='请输入折扣率'></input>
+      </view>
+    </view>
+
+    <view class='btn' bindtap='navRes'>开始测算</view>
+  </view>
+</theme-view>

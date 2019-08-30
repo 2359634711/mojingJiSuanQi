@@ -1,0 +1,23 @@
+<!--pages/detail/detail.wxml-->
+<theme-view>
+
+  <view class='main'>
+    <image src='/res/icon/banner@2x.png' class='backImg'></image>
+
+
+    <view class='content'>
+      <view class='title'>请选择您的身份</view>
+      <view style='width:100%;'>
+        <picker-view class='pickView' value="{{value}}" bindchange="bindChange">
+          <picker-view-column>
+            <view wx:for="{{list}}" wx:key='{{index}}' class='pickItem'>{{item.levelname}}</view>
+          </picker-view-column>
+        </picker-view>
+      </view>
+
+      <view class='btn' bindtap='navInput'>下一步</view>
+    </view>
+
+  </view>
+  <nav-bottom currentIndex='{{1}}' />
+</theme-view>

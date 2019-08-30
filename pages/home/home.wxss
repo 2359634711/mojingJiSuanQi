@@ -1,0 +1,68 @@
+/* pages/home/home.wxss */
+
+.view {
+  width: 100%;
+  height: 50rpx;
+  background: var(--themeCG);
+}
+
+.icon {
+  width: 349rpx;
+  height: 159rpx;
+  margin: 182rpx auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputImg {
+  width: 44rpx;
+  height: 44rpx;
+  margin-left: 50rpx;
+}
+
+.inputItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  padding: 20rpx 0;
+  font-size: 30rpx;
+}
+
+input {
+  flex-grow: 1;
+  margin-left: 35rpx;
+}
+
+page {
+  background: #000;
+}
+
+.btn {
+  margin-top: 96rpx;
+  border-radius: 100px;
+  color: #000007;
+  font-size: 32rpx;
+  background: var(--themeCG);
+  width: 690rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-weight: 800;
+}
+
+.getCode {
+  margin-right: 50rpx;
+}
+
+.backImg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 0;
+}

@@ -1,0 +1,52 @@
+<!--pages/detail/resPage/resPage.wxml-->
+
+<theme-view>
+  <view class='backBox'>
+    <view class='title'>
+      <image src='/res/icon/tip@2x.png' class='icon'></image>
+      <view class='titleTitle'>您选择的身份是：</view>
+      <view class='titleValue'>总裁</view>
+    </view>
+
+
+    <view class='infoBox'>
+      <view class='infoTop'>您累计
+        <text style='color:#fff;'>15天</text>的收益是</view>
+      <view class='infoMiddle'>
+        <text class='money'>3,980</text>
+        <text style='font-size:28rpx;color:#fff;margin-left:17rpx;'>元</text>
+      </view>
+      <view class='infoBottom'>折扣率：9折</view>
+    </view>
+  </view>
+
+  <view class='main'>
+
+    <view class='mainTitle'>
+      <image src='/res/icon/' class='icon'></image>
+      <view class='mainTitleText'>收益明细</view>
+    </view>
+
+    <view class='titleLeft'>直销收益</view>
+    <view class='table'>
+      <view class='header tr'>
+        <view>身份</view>
+        <view>金额(元)</view>
+      </view>
+
+      <view class='tr'>
+        <view class='tdTitle'>总裁</view>
+        <view class='tdValue'>188.88</view>
+      </view>
+
+    </view>
+
+
+
+    <view class='titleLeft'>层级收益</view>
+
+
+  </view>
+
+
+</theme-view>

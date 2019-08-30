@@ -1,0 +1,8 @@
+<theme-view>
+  <view class='main'>
+    <image mode='aspectFill' class='iconTitle' src='{{top_img}}'></image>
+    <image mode='widthFix' class='iconContent' src='{{list_img}}'></image>
+  </view>
+  <nav-bottom bindonAction='onNavBottomChange' currentIndex='{{0}}' />
+
+</theme-view>

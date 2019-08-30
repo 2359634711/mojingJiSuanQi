@@ -1,0 +1,22 @@
+<!--pages/home/home.wxml-->
+<theme-view>
+  <view class='main'>
+
+    <image mode='widthFix' src='{{login_img}}' class='backImg'></image>
+
+    <image mode='widthFix' src='/res/icon/logo@2x.png' class='icon'></image>
+
+
+    <view class='inputItem'>
+      <image class='inputImg' src='/res/icon/dl1@2x.png'></image>
+      <input type='text' bindinput='changePhone' placeholder='请输入手机号码'></input>
+    </view>
+    <view class='inputItem'>
+      <image class='inputImg' src='/res/icon/dl2@2x.png'></image>
+      <input type='text' bindinput='changeCode' placeholder='请输入验证码'></input>
+      <view bindtap='sendCode' class='getCode'>{{sendFlag?"获取验证码":timeEnd + 's'}}</view>
+    </view>
+    <view class='btn' bindtap='login'>登录</view>
+
+  </view>
+</theme-view>
